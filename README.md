@@ -14,4 +14,4 @@
     <li>Working time</li>
   </ul>
 
-![workflow](https://github.com/Too-Many-Bytes/Unittests/actions/workflows/script.yml/badge.svg)
+![workflow](https://github.com/Too-Many-Bytes/Unittests/actions/workflows/main.yml/badge.svg)
