@@ -23,10 +23,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run s test for find_min
-        run: test_func.py
+        run: python -m unittest discover .
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+
