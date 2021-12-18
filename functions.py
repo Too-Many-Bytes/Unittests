@@ -16,26 +16,28 @@ def find_min(massive: list):
     try:
         current_min = massive[0]
         for i in massive:
+            int(i)
             if i < current_min:
                 current_min = i
         return current_min
     except OverflowError:
-        print('Ошибка переполнения!')
-    except TypeError:
-        print('Некорректый ввод!')
+        return 'Ошибка переполнения!'
+    except ValueError:
+        return 'Некорректный ввод!'
 
 
 def find_max(massive: list):
     try:
         current_max = massive[0]
         for i in massive:
+            int(i)
             if i > current_max:
                 current_max = i
         return current_max
     except OverflowError:
-        print('Ошибка переполнения!')
-    except TypeError:
-        print('Некорректый ввод!')
+        return 'Ошибка переполнения!'
+    except ValueError:
+        return 'Некорректный ввод!'
 
 
 def find_sum(mass: list):
@@ -45,9 +47,9 @@ def find_sum(mass: list):
             total_sum += i
         return total_sum
     except OverflowError:
-        print('Ошибка переполнения!')
+        return 'Ошибка переполнения!'
     except TypeError:
-        print('Некорректый ввод!')
+        return 'Некорректный ввод!'
 
 
 def find_product(mass: list):
@@ -57,6 +59,7 @@ def find_product(mass: list):
             product *= i
         return product
     except OverflowError:
-        print('Ошибка переполнения')
+        return 'Ошибка переполнения'
     except TypeError:
-        print('Некорректый ввод!')
+        return 'Некорректный ввод!'
+

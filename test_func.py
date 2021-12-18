@@ -2,6 +2,7 @@ import unittest
 from functools import reduce
 from random import randint
 from time import time
+
 from functions import *
 
 
@@ -75,21 +76,24 @@ class TestOnInvalidData(unittest.TestCase):
 
     def test_min_on_invalid_str(self):
         for i in self.data:
-            self.assertRaises(TypeError, find_min(i))
+            with self.subTest(i=i):
+                self.assertEqual(find_min(i), 'Некорректный ввод!')
 
     def test_max_on_invalid_str(self):
         for i in self.data:
-            self.assertRaises(TypeError, find_max(i))
+            with self.subTest(i=i):
+                self.assertEqual(find_max(i), 'Некорректный ввод!')
 
     def test_sum_on_invalid_str(self):
         for i in self.data:
-            self.assertRaises(TypeError, find_sum(i))
+            with self.subTest(i=i):
+                self.assertEqual(find_sum(i), 'Некорректный ввод!')
 
     def test_product_on_invalid_str(self):
         for i in self.data:
-            self.assertRaises(TypeError, find_product(i))
+            with self.subTest(i=i):
+                self.assertEqual(find_product(i), 'Некорректный ввод!')
 
 
 if __name__ == '__main__':
     unittest.main()
-
