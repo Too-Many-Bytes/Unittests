@@ -13,3 +13,5 @@
     <li>Processing invalid input</li>
     <li>Working time</li>
   </ul>
+
+![workflow](https://github.com/Too-Many-Bytes/Unittests/blob/main/.github/workflows/script.yml/badge.svg)
