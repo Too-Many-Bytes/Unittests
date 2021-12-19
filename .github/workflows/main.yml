@@ -12,12 +12,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run tests for calculating_program
-        run: python -m unittest test_func_working_time.py
+      - name: Testing_answers
+        run: python -m unittest discover test_func_answers.py
+
+      - name: Testing time
+        run: python -m unittest discover test_func_working_time.py
+
+      - name: Testing for invalid
+        run: python -m unittest discover test_func_processing_invalid_data.py
+
       - uses: yanzay/notify-telegram@v0.1.0
         if: always()
         with:
-          chat: 933027728 # user id or channel name secret
-          token: 5051639728:AAFf69jhBUdCKFArmpclxyRiocyrXpwZozQ # token secret
-          status: ${{ job.status }} # do not modify this line
-        
+          chat: 933027728
+          token: 5051639728:AAFf69jhBUdCKFArmpclxyRiocyrXpwZozQ
+          status: ${{ job.status }}
