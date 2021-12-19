@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run tests for calculating_program
-        run: python -m unittest discover ./checking_answers
+        run: python -m unittest test_func_working_time.py
       - uses: yanzay/notify-telegram@v0.1.0
         if: always()
         with:
