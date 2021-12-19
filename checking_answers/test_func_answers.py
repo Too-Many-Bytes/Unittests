@@ -2,7 +2,7 @@ import unittest
 from functools import reduce
 from random import randint
 
-from ..functions import *
+from Unittests.functions import *
 
 
 class TestCalculatingFunc(unittest.TestCase):
