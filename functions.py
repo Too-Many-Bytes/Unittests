@@ -44,7 +44,7 @@ def find_sum(mass: list):
     try:
         total_sum = 0
         for i in mass:
-            total_sum = i
+            total_sum += i
         return total_sum
     except OverflowError:
         return 'Ошибка переполнения!'
