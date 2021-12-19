@@ -6,7 +6,7 @@ from ..functions import *
 
 
 class TestCalculatingFunc(unittest.TestCase):
-    with open('../cases_results.txt', 'w', encoding='utf-8') as f:
+    with open('cases_results.txt', 'w', encoding='utf-8') as f:
         for _ in range(10):
             for _ in range(8):
                 f.write(str(randint(-100, 100)) + ' ')
