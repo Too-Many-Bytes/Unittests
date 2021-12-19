@@ -1,1 +1,25 @@
+name: Run_tests
+
+on:
+
+  push:
+    branches: [ main ]
+    
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Testing time
+        run: python -m unittest test_func_working_time.py
+
+      - uses: yanzay/notify-telegram@v0.1.0
+        if: always()
+        with:
+          chat: 933027728
+          token: 5051639728:AAFf69jhBUdCKFArmpclxyRiocyrXpwZozQ
+          status: ${{ job.status }}
 
