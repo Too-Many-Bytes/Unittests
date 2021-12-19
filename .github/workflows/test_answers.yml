@@ -15,12 +15,6 @@ jobs:
       - name: Testing_answers
         run: python -m unittest test_func_answers.py
 
-      - name: Testing time
-        run: python -m unittest test_func_working_time.py
-
-      - name: Testing for invalid
-        run: python -m unittest test_func_processing_invalid_data.py
-
       - uses: yanzay/notify-telegram@v0.1.0
         if: always()
         with:
