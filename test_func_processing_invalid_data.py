@@ -1,6 +1,6 @@
 import unittest
 from random import randint
-from Unittests.functions import *
+from functions import *
 
 
 class TestOnInvalidData(unittest.TestCase):
