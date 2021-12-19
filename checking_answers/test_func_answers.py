@@ -1,7 +1,8 @@
 import unittest
 from functools import reduce
 from random import randint
-from functions import *
+
+from ..functions import *
 
 
 class TestCalculatingFunc(unittest.TestCase):
@@ -36,4 +37,3 @@ class TestCalculatingFunc(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
