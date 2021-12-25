@@ -14,4 +14,6 @@
     <li>Working time</li>
   </ul>
 
-![workflow](https://github.com/Too-Many-Bytes/Unittests/actions/workflows/main.yml/badge.svg)
+![workflow](https://github.com/Too-Many-Bytes/Unittests/actions/workflows/test_answers.yml/badge.svg)
+![workflow](https://github.com/Too-Many-Bytes/Unittests/actions/workflows/test_processing_invalid_data.yml/badge.svg)
+![workflow](https://github.com/Too-Many-Bytes/Unittests/actions/workflows/test_working_time.yml/badge.svg)
